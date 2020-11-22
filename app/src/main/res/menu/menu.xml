@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        tools:ignore="MissingConstraints" />
+
+    <item android:id="@+id/menu_reproductor"
+        android:title="Reproductor"
+        android:icon="@drawable/ic_baseline_music_video_24"
+        tools:ignore="HardcodedText" />
+
+    <item android:id="@+id/menu_galeria"
+        android:title="Galeria"
+        android:icon="@drawable/ic_baseline_playlist_play_24"
+        tools:ignore="MissingConstraints" />
+
+    <item android:id="@+id/menu_perfil"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        tools:ignore="MissingConstraints" />
+
+</menu>
