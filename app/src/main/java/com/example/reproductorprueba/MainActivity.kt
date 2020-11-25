@@ -1,12 +1,16 @@
 package com.example.reproductorprueba
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.example.reproductorprueba.ObjectBox.boxStore
+import com.example.reproductorprueba.data.db.MyObjectBox
 import com.example.reproductorprueba.ui.DashboardActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import io.objectbox.android.AndroidObjectBrowser
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,8 +20,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        bottomNav = findViewById(R.id.bottomNav)
 
+
+        bottomNav = findViewById(R.id.bottomNav)
 
 
         bottomNav.setOnNavigationItemSelectedListener {

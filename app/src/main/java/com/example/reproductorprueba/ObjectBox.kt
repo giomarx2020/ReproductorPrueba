@@ -6,13 +6,16 @@ import io.objectbox.BoxStore
 import javax.inject.Singleton
 
 @Singleton
-object ObjectBox {
+object ObjectBox{
     lateinit var boxStore: BoxStore
-        private set
 
     fun init(context: Context) {
         boxStore = MyObjectBox.builder()
             .androidContext(context.applicationContext)
             .build()
+    }
+
+    fun get(): BoxStore? {
+        return boxStore
     }
 }

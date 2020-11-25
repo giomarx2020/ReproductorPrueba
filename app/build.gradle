@@ -3,7 +3,7 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
-    id 'io.objectbox' // Apply last.
+    //id 'io.objectbox' // Apply last.
 
 }
 
@@ -109,7 +109,7 @@ dependencies {
     implementation "io.coil-kt:coil:$coil_version"
 
     //Analytics
-    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+    //implementation 'com.google.firebase:firebase-analytics:17.3.0'
 
     //Mem leaks
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$leak_canary_version"
@@ -134,6 +134,8 @@ dependencies {
     implementation 'androidx.palette:palette:1.0.0'
     implementation 'com.android.support:multidex:1.0.3'
 
-}
+    debugImplementation "io.objectbox:objectbox-android-objectbrowser:$objectboxVersion"
+    releaseImplementation "io.objectbox:objectbox-android:$objectboxVersion"
 
-apply plugin: 'io.objectbox'
+}
+apply plugin: 'io.objectbox' // Apply last.
